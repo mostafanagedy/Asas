@@ -91,11 +91,21 @@
                 <div class="row">
                     <div class="col-md-6 form-group mb-4">
                         <label class="text-black" for="password">كلمة المرور</label>
-                        <input type="password" class="form-control" id="password">
+                        <div class="position-relative">
+                            <input type="password" class="form-control" id="password" style="padding-left: 40px;">
+                            <span class="position-absolute top-50 translate-middle-y toggle-password" data-target="#password" style="left: 15px; cursor: pointer; color: #6c757d; z-index: 10;">
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-6 form-group mb-4">
                         <label class="text-black" for="confirm_password">تأكيد كلمة المرور</label>
-                        <input type="password" class="form-control" id="confirm_password">
+                        <div class="position-relative">
+                            <input type="password" class="form-control" id="confirm_password" style="padding-left: 40px;">
+                            <span class="position-absolute top-50 translate-middle-y toggle-password" data-target="#confirm_password" style="left: 15px; cursor: pointer; color: #6c757d; z-index: 10;">
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -135,6 +145,25 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+        <script>
+            document.querySelectorAll('.toggle-password').forEach(item => {
+                item.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const input = document.querySelector(targetId);
+                    const icon = this.querySelector('i');
+                    
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                    }
+                });
+            });
+        </script>
 	</body>
 
 </html>

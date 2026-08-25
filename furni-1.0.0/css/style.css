@@ -719,3 +719,43 @@ textarea {
  
  
 [dir="rtl"] .tns-item { float: right; }
+
+/* Glass Navbar & Fixed Top Adjustments */
+body {
+    padding-top: 76px; /* Adjust for fixed navbar */
+}
+.custom-navbar.glass-nav {
+    background: rgba(59, 93, 80, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Reduce Footer Size */
+.footer-section {
+    padding: 40px 0 !important;
+}
+.footer-section .subscription-form {
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+.footer-section .sofa-img {
+    top: -130px !important;
+}
+.footer-section .sofa-img img {
+    max-width: 280px !important;
+}
+.footer-section .links-wrap {
+    margin-top: 20px !important;
+}
+.footer-section .border-top {
+    padding-top: 20px !important;
+}
+
+/* RTL Fix for Contact Info Spacing */
+.service .service-icon {
+    margin-right: 0 !important;
+    margin-left: 20px !important;
+}

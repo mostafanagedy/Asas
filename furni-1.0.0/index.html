@@ -21,13 +21,24 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<style>
+			#heroCarousel img {
+				position: static !important;
+				margin: 0 auto !important;
+			}
+			.testimonial-block blockquote p,
+			.testimonial-block .author-info h3,
+			.testimonial-block .author-info .position {
+				color: #2f2f2f !important;
+			}
+		</style>
 		<title>قالب فيرني المجاني من تصميم Untree.co</title>
 	</head>
 
 	<body>
 
 		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top glass-nav" arial-label="Furni navigation bar">
 
 			<div class="container">
 				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
@@ -37,7 +48,7 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<ul class="custom-navbar-nav navbar-nav me-auto mb-2 mb-md-0">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">الرئيسية</a>
 						</li>
@@ -48,9 +59,9 @@
 						<li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
 					</ul>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="login.html"><img src="images/user.svg"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-0 align-items-center">
+						<li><a class="nav-link btn btn-white-outline px-4 d-flex align-items-center" href="cart.html" style="border-radius: 25px; font-weight: 600;"><img src="images/cart.svg" style="margin-left: 8px;"> السلة</a></li>
+						<li class="ms-3"><a class="nav-link btn btn-secondary text-dark px-4 d-flex align-items-center" href="login.html" style="border-radius: 25px; font-weight: 600;"><img src="images/user.svg" style="margin-left: 8px; filter: invert(0) brightness(0);"> تسجيل الدخول</a></li>
 					</ul>
 				</div>
 			</div>
@@ -71,7 +82,50 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+								<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+									</div>
+									<div class="carousel-inner" style="height: 500px;">
+										<div class="carousel-item active h-100" data-bs-interval="3000">
+											<div class="d-flex justify-content-center align-items-center h-100">
+												<img src="images/product-3.png" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+											</div>
+										</div>
+										<div class="carousel-item h-100" data-bs-interval="3000">
+											<div class="d-flex justify-content-center align-items-center h-100">
+												<img src="images/product-2.png" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+											</div>
+										</div>
+										<div class="carousel-item h-100" data-bs-interval="3000">
+											<div class="d-flex justify-content-center align-items-center h-100">
+												<img src="images/product-1.png" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+											</div>
+										</div>
+										<div class="carousel-item h-100" data-bs-interval="3000">
+											<div class="d-flex justify-content-center align-items-center h-100">
+												<img src="images/Shell-Shaped-Armchair-Pink-Velvet-Fabric-One-Seater-Sofa-for-Living-Room 1.png" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+											</div>
+										</div>
+										<div class="carousel-item h-100" data-bs-interval="3000">
+											<div class="d-flex justify-content-center align-items-center h-100">
+												<img src="images/image 1165.png" class="img-fluid" style="max-height: 450px; object-fit: contain;">
+											</div>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">السابق</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">التالي</span>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -95,9 +149,9 @@
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 						<a class="product-item" href="cart.html">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">كرسي نورديك</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="images/chair_white.png" class="img-fluid product-thumbnail" style="height:250px; object-fit:contain;">
+							<h3 class="product-title">كرسي قماش أزرق طوي</h3>
+							<strong class="product-price">ج.م 850.00</strong>
 
 							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid">
@@ -109,9 +163,9 @@
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 						<a class="product-item" href="cart.html">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
+							<img src="images/chair_curved_beige.png" class="img-fluid product-thumbnail" style="height:250px; object-fit:contain;">
 							<h3 class="product-title">كرسي كروزو إيرو</h3>
-							<strong class="product-price">$78.00</strong>
+							<strong class="product-price">ج.م 78.00</strong>
 
 							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid">
@@ -123,9 +177,9 @@
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 						<a class="product-item" href="cart.html">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
+							<img src="images/chair_folding_blue.png" class="img-fluid product-thumbnail" style="height:250px; object-fit:contain;">
 							<h3 class="product-title">كرسي مريح</h3>
-							<strong class="product-price">$43.00</strong>
+							<strong class="product-price">ج.م 43.00</strong>
 
 							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid">
@@ -292,81 +346,83 @@
 					<div class="col-lg-12">
 						<div class="testimonial-slider-wrap text-center">
 
-							<div id="testimonial-nav">
-								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-							</div>
-
-							<div class="testimonial-slider">
+							<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 								
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
+								<div class="carousel-indicators" style="bottom: -50px;">
+									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
+									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
+									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
+								</div>
 
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى. هذا النص هو مثال لنص. morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+								<div class="carousel-inner pb-5">
+									
+									<div class="carousel-item active">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;تجربتي مع هذا المتجر كانت استثنائية. جودة الأثاث ممتازة والتصميمات عصرية جداً، بالإضافة إلى أن خدمة العملاء كانت سريعة ومتعاونة.&rdquo;</p>
+													</blockquote>
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/person-1.png" alt="أحمد محمد" class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">أحمد محمد</h3>
+														<span class="position d-block mb-3">مهندس ديكور</span>
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">المدير التنفيذي والشريك المؤسس لشركة XYZ</span>
 												</div>
 											</div>
-
 										</div>
-									</div>
-								</div> 
-								<!-- END item -->
+									</div> 
 
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى. هذا النص هو مثال لنص. morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+									<div class="carousel-item">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;أفضل مكان لشراء الأثاث المودرن! الخامات المستخدمة عالية الجودة والأسعار تنافسية مقارنة بالسوق. أنصح الجميع بالتعامل معهم.&rdquo;</p>
+													</blockquote>
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/person-1.png" alt="سارة خالد" class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">سارة خالد</h3>
+														<span class="position d-block mb-3">ربة منزل</span>
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">المدير التنفيذي والشريك المؤسس لشركة XYZ</span>
 												</div>
 											</div>
-
 										</div>
-									</div>
-								</div> 
-								<!-- END item -->
+									</div> 
 
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى. هذا النص هو مثال لنص. morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+									<div class="carousel-item">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;التوصيل كان في الموعد المحدد، والمنتجات مطابقة تماماً للصور الموجودة على الموقع. كانت تجربة تسوق رائعة وسأكررها بالتأكيد.&rdquo;</p>
+													</blockquote>
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/person-1.png" alt="محمود طارق" class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">محمود طارق</h3>
+														<span class="position d-block mb-3">صاحب شركة</span>
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">المدير التنفيذي والشريك المؤسس لشركة XYZ</span>
 												</div>
 											</div>
-
 										</div>
-									</div>
-								</div> 
-								<!-- END item -->
+									</div> 
+
+								</div>
+								
+								<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 5%;">
+									<span class="fa fa-chevron-left" aria-hidden="true" style="color: #3b5d50; font-size: 1.5rem; background: rgba(0,0,0,0.05); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"></span>
+									<span class="visually-hidden">السابق</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 5%;">
+									<span class="fa fa-chevron-right" aria-hidden="true" style="color: #3b5d50; font-size: 1.5rem; background: rgba(0,0,0,0.05); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"></span>
+									<span class="visually-hidden">التالي</span>
+								</button>
 
 							</div>
 

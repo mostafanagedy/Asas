@@ -22,77 +22,30 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>قالب فيرني المجاني من تصميم Untree.co </title>
-	</head>
+	
+<style>
+    body { padding-top: 0 !important; }
+    .hero { padding-top: 4rem !important; min-height: 100vh; display: flex; flex-direction: column; }
+    .untree_co-section { flex-grow: 1; display: flex; align-items: center; }
+</style>
+</head>
 
 	<body>
 
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">الرئيسية</a>
-						</li>
-						<li><a class="nav-link" href="shop.html">المتجر</a></li>
-						<li><a class="nav-link" href="about.html">من نحن</a></li>
-						<li><a class="nav-link" href="services.html">خدماتنا</a></li>
-						<li><a class="nav-link" href="blog.html">المدونة</a></li>
-						<li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-					</ul>
-
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="login.html"><img src="images/user.svg"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-					</ul>
-				</div>
-			</div>
-				
-		</nav>
-		<!-- End Header/Navigation -->
+		
 
 		<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
+			<div class="hero position-relative">
+				<a href="index.html" class="btn btn-white-outline position-absolute m-4" style="top: 0; right: 0; z-index: 10;">
+					<i class="fa fa-arrow-right ms-2"></i> العودة للرئيسية
+				</a>
+				<div class="container mt-5">
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>تسجيل الدخول</h1>
-								<p class="mb-4">قم بتسجيل الدخول إلى حسابك لمتابعة التسوق ومتابعة طلباتك.</p>
-								<p><a href="" class="btn btn-secondary me-2">تسوق الآن</a><a href="#" class="btn btn-white-outline">استكشف</a></p>
-							</div>
-						</div>
-						<div class="col-lg-7">
-							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- End Hero Section -->
-
-		
-		<!-- Start Contact Form -->
-		<div class="untree_co-section">
-      <div class="container">
-
-        <div class="block">
-          <div class="row justify-content-center">
-
-
-            <div class="col-md-8 col-lg-8 pb-4">
-
-
-              
-              <form>
+								<h1 class="mb-4 text-white">تسجيل الدخول</h1>
+								<div class="card p-4 shadow text-start" style="border-radius: 15px; background: white; color: #2f2f2f;">
+									<form>
                 <div class="form-group mb-4">
                   <label class="text-black" for="email">البريد الإلكتروني</label>
                   <input type="email" class="form-control" id="email">
@@ -122,130 +75,21 @@
                 
                 <p class="text-center mt-5">ليس لديك حساب؟ <a href="#">إنشاء حساب جديد</a></p>
               </form>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
-
-  <!-- End Contact Form -->
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="images/couch.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
 
 		
-
-		<!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="صورة" class="img-fluid">
-				</div>
-
-				<div class="row justify-content-end">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="صورة" class="img-fluid"></span><span>اشترك في النشرة البريدية</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="أدخل اسمك">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. قم بتسجيل الدخول إلى حسابك لمتابعة التسوق ومتابعة طلباتك. هذا النص هو مثال لنص.</p>
-
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-8">
-						<div class="row links-wrap">
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">من نحن</a></li>
-									<li><a href="#">الخدمات</a></li>
-									<li><a href="#">المدونة</a></li>
-									<li><a href="#">اتصل بنا</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">الدعم</a></li>
-									<li><a href="#">قاعدة المعرفة</a></li>
-									<li><a href="#">دردشة مباشرة</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">الوظائف</a></li>
-									<li><a href="#">فريقنا</a></li>
-									<li><a href="#">القيادة</a></li>
-									<li><a href="#">سياسة الخصوصية</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">كرسي نورديك</a></li>
-									<li><a href="#">كروزو إيرو</a></li>
-									<li><a href="#">كرسي مريح</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">حقوق النشر &copy;<script>document.write(new Date().getFullYear());</script>. جميع الحقوق محفوظة. &mdash; تم التصميم بحب بواسطة مصطفي نجدي  <!-- License information: https://untree.co/license/ -->
-            </p>
-						</div>
-
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">الشروط والأحكام</a></li>
-								<li><a href="#">سياسة الخصوصية</a></li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</footer>
-		<!-- End Footer Section -->	
-
-
+		<!-- Start Contact Form -->
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>

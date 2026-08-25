@@ -17,8 +17,7 @@
 				autoplay: true,
 				autoplayHoverPause: true,
 				autoplayTimeout: 3500,
-				autoplayButtonOutput: false,
-				textDirection: 'rtl'
+				autoplayButtonOutput: false
 			});
 		}
 	};
@@ -72,3 +71,39 @@
 
 
 })()
+
+// Cart Notification Logic
+document.addEventListener('DOMContentLoaded', function() {
+    var cartBadge = document.getElementById('cart-badge');
+    if(!cartBadge) return;
+    
+    // Check local storage for cart count
+    var cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+    
+    function updateBadge() {
+        if(cartCount > 0) {
+            cartBadge.textContent = cartCount;
+            cartBadge.style.display = 'block';
+        } else {
+            cartBadge.style.display = 'none';
+        }
+    }
+    
+    updateBadge();
+    
+    var addButtons = document.querySelectorAll('.icon-cross');
+    addButtons.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            cartCount++;
+            localStorage.setItem('cartCount', cartCount);
+            updateBadge();
+            
+            // Optional: Add a small animation
+            cartBadge.classList.add('animate__animated', 'animate__bounceIn');
+            setTimeout(() => {
+                cartBadge.classList.remove('animate__animated', 'animate__bounceIn');
+            }, 1000);
+        });
+    });
+});

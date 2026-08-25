@@ -17,6 +17,12 @@ body {
   font-size: 14px;
   background-color: #eff2f1; }
 
+.testimonial-block blockquote p,
+.testimonial-block .author-info h3,
+.testimonial-block .author-info .position {
+	color: #2f2f2f !important;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: .3s all ease;

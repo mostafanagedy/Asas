@@ -35,6 +35,30 @@
     .floating-couch {
         animation: float 4s ease-in-out infinite;
     }
+    .form-control:focus {
+        border-color: #3b5d50;
+        box-shadow: 0 0 0 0.25rem rgba(59, 93, 80, 0.25);
+    }
+    .btn-google {
+        background-color: #fff;
+        color: #757575;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+    }
+    .btn-google:hover {
+        background-color: #f8f9fa;
+        color: #757575;
+    }
+    .btn-facebook {
+        background-color: #1877F2;
+        color: #fff;
+        border-radius: 25px;
+        border: 1px solid #1877F2;
+    }
+    .btn-facebook:hover {
+        background-color: #166fe5;
+        color: #fff;
+    }
 </style>
 </head>
 
@@ -82,10 +106,10 @@
                 <div class="mb-4 pt-4 border-top">
                   <p class="text-center mb-4">أو سجل باستخدام</p>
                   <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-outline-dark d-flex align-items-center me-2">
-                      <i class="fa-brands fa-google me-2"></i> جوجل
+                    <a href="#" class="btn btn-google d-flex align-items-center me-2 px-4 shadow-sm">
+                      <i class="fa-brands fa-google me-2" style="color: #DB4437;"></i> جوجل
                     </a>
-                    <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                    <a href="#" class="btn btn-facebook d-flex align-items-center px-4 shadow-sm">
                       <i class="fa-brands fa-facebook-f me-2"></i> فيسبوك
                     </a>
                   </div>

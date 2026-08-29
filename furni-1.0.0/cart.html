@@ -7,419 +7,515 @@
 */ -->
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="images/logo.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="images/logo.png" />
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<title>أساس - Asas</title>
-	</head>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+      integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>أساس - Asas</title>
+  </head>
 
-	<body>
+  <body data-page="cart">
+    <!-- Start Header/Navigation -->
+    <nav
+      class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top glass-nav"
+      arial-label="Furni navigation bar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="أساس - Asas"
+            style="height: 55px; width: auto"
+          />
+        </a>
 
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top glass-nav" arial-label="Furni navigation bar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsFurni"
+          aria-controls="navbarsFurni"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="أساس - Asas" style="height: 55px; width: auto;">
-				</a>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+          <ul class="custom-navbar-nav navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">الرئيسية</a>
+            </li>
+            <li><a class="nav-link" href="shop.html">المتجر</a></li>
+            <li><a class="nav-link" href="about.html">من نحن</a></li>
+            <li><a class="nav-link" href="services.html">خدماتنا</a></li>
+            <li><a class="nav-link" href="blog.html">المدونة</a></li>
+            <li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+          </ul>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+          <ul
+            class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-0 align-items-center"
+          >
+            <li>
+              <a
+                class="nav-link btn btn-white-outline px-4 d-flex align-items-center cart-link"
+                href="cart.html"
+                style="
+                  border-radius: 25px;
+                  font-weight: 600;
+                  position: relative;
+                "
+              >
+                <img src="images/cart.svg" style="margin-left: 8px" />
+                <span>السلة</span>
+                <span id="cart-badge" class="cart-badge" style="display: none"
+                  >0</span
+                >
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="nav-link btn btn-secondary text-dark px-4 d-flex align-items-center"
+                href="login.html"
+                style="border-radius: 25px; font-weight: 600"
+                ><img
+                  src="images/user.svg"
+                  style="margin-left: 8px; filter: invert(0) brightness(0)"
+                />
+                تسجيل الدخول</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Header/Navigation -->
 
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav me-auto mb-2 mb-md-0">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">الرئيسية</a>
-						</li>
-						<li><a class="nav-link" href="shop.html">المتجر</a></li>
-						<li><a class="nav-link" href="about.html">من نحن</a></li>
-						<li><a class="nav-link" href="services.html">خدماتنا</a></li>
-						<li><a class="nav-link" href="blog.html">المدونة</a></li>
-						<li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-					</ul>
+    <div class="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5">
+            <div class="intro-excerpt">
+              <h1>سلة المشتريات</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-0 align-items-center">
-						<li><a class="nav-link btn btn-white-outline px-4 d-flex align-items-center" href="cart.html" style="border-radius: 25px; font-weight: 600;"><img src="images/cart.svg" style="margin-left: 8px;"> السلة</a></li>
-						<li class="ms-3"><a class="nav-link btn btn-secondary text-dark px-4 d-flex align-items-center" href="login.html" style="border-radius: 25px; font-weight: 600;"><img src="images/user.svg" style="margin-left: 8px; filter: invert(0) brightness(0);"> تسجيل الدخول</a></li>
-					</ul>
-				</div>
-			</div>
-				
-		</nav>
-		<!-- End Header/Navigation -->
+    <div class="untree_co-section before-footer-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="site-blocks-table">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail">صورة</th>
+                    <th class="product-name">المنتج</th>
+                    <th class="product-price">السعر</th>
+                    <th class="product-quantity">الكمية</th>
+                    <th class="product-total">الإجمالي</th>
+                    <th class="product-remove">إزالة</th>
+                  </tr>
+                </thead>
+                <tbody id="cartTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 
-		<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>سلة المشتريات</h1>
-							</div>
-						</div>
-						<div class="col-lg-7">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- End Hero Section -->
-
-		
-
-		<div class="untree_co-section before-footer-section">
-            <div class="container">
-              <div class="row mb-5">
-                <form class="col-md-12" method="post">
-                  <div class="site-blocks-table">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="product-thumbnail">صورة</th>
-                          <th class="product-name">المنتج</th>
-                          <th class="product-price">السعر</th>
-                          <th class="product-quantity">الكمية</th>
-                          <th class="product-total">الإجمالي</th>
-                          <th class="product-remove">إزالة</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="product-thumbnail">
-                            <img src="images/product-1.png" alt="صورة" class="img-fluid">
-                          </td>
-                          <td class="product-name">
-                            <h2 class="h5 text-black">المنتج 1</h2>
-                          </td>
-                          <td>ج.م 49.00</td>
-                          <td>
-                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                              <div class="input-group-prepend">
-                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                              </div>
-                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                              </div>
-                            </div>
-        
-                          </td>
-                          <td>ج.م 49.00</td>
-                          <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                        </tr>
-        
-                        <tr>
-                          <td class="product-thumbnail">
-                            <img src="images/product-2.png" alt="صورة" class="img-fluid">
-                          </td>
-                          <td class="product-name">
-                            <h2 class="h5 text-black">المنتج 2</h2>
-                          </td>
-                          <td>ج.م 49.00</td>
-                          <td>
-                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                              <div class="input-group-prepend">
-                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                              </div>
-                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                              </div>
-                            </div>
-        
-                          </td>
-                          <td>ج.م 49.00</td>
-                          <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <a
+                  class="btn btn-outline-black btn-sm btn-block"
+                  href="shop.html"
+                  >متابعة التسوق</a
+                >
               </div>
-        
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row mb-5">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <button class="btn btn-black btn-sm btn-block">تحديث السلة</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btn btn-outline-black btn-sm btn-block">متابعة التسوق</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label class="text-black h4" for="coupon">كوبون الخصم</label>
-                      <p>أدخل رمز الكوبون إذا كان لديك واحد.</p>
-                    </div>
-                    <div class="col-md-8 mb-3 mb-md-0">
-                      <input type="text" class="form-control py-3" id="coupon" placeholder="كوبون الخصم Code">
-                    </div>
-                    <div class="col-md-4">
-                      <button class="btn btn-black">تطبيق كوبون الخصم</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 pl-5">
-                  <div class="row justify-content-end">
-                    <div class="col-md-7">
-                      <div class="row">
-                        <div class="col-md-12 text-right border-bottom mb-5">
-                          <h3 class="text-black h4 text-uppercase">سلة المشتريات الإجماليs</h3>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-md-6">
-                          <span class="text-black">المجموع الفرعي</span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <strong class="text-black">ج.م 230.00</strong>
-                        </div>
-                      </div>
-                      <div class="row mb-5">
-                        <div class="col-md-6">
-                          <span class="text-black">الإجمالي</span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <strong class="text-black">ج.م 230.00</strong>
-                        </div>
-                      </div>
-        
-                      <div class="row">
-                        <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">المتابعة للدفع</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6">
+                <button
+                  class="btn btn-black btn-sm btn-block"
+                  type="button"
+                  onclick="window.location.reload()"
+                >
+                  تحديث السلة
+                </button>
               </div>
             </div>
           </div>
-		
+          <div class="col-md-6 pl-5" id="cartSummary"></div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Start Footer Section -->
-				<!-- Start Testimonial Slider -->
-		<div class="testimonial-section before-footer-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 mx-auto text-center">
-						<h2 class="section-title">آراء العملاء</h2>
-					</div>
-				</div>
+    <!-- Start Footer Section -->
+    <!-- Start Testimonial Slider -->
+    <!-- قسم آراء العملاء مخفي بناءً على طلب العميل.
+    <div class="testimonial-section before-footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+            <h2 class="section-title">آراء العملاء</h2>
+          </div>
+        </div>
 
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="testimonial-slider-wrap text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="testimonial-slider-wrap text-center">
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators" style="bottom: -50px">
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                    style="
+                      background-color: #3b5d50;
+                      width: 10px;
+                      height: 10px;
+                      border-radius: 50%;
+                    "
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                    style="
+                      background-color: #3b5d50;
+                      width: 10px;
+                      height: 10px;
+                      border-radius: 50%;
+                    "
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                    style="
+                      background-color: #3b5d50;
+                      width: 10px;
+                      height: 10px;
+                      border-radius: 50%;
+                    "
+                  ></button>
+                </div>
 
-							<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-								
-								<div class="carousel-indicators" style="bottom: -50px;">
-									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
-									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
-									<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #3b5d50; width: 10px; height: 10px; border-radius: 50%;"></button>
-								</div>
+                <div class="carousel-inner pb-5">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8 mx-auto">
+                        <div class="testimonial-block text-center">
+                          <blockquote class="mb-5">
+                            <p>
+                              &ldquo;تجربتي مع هذا المتجر كانت استثنائية. جودة
+                              الأثاث ممتازة والتصميمات عصرية جداً، بالإضافة إلى
+                              أن خدمة العملاء كانت سريعة ومتعاونة.&rdquo;
+                            </p>
+                          </blockquote>
+                          <div class="author-info">
+                            <div class="author-pic">
+                              <img
+                                src="images/person-1.png"
+                                alt="أحمد محمد"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h3 class="font-weight-bold">أحمد محمد</h3>
+                            <span class="position d-block mb-3"
+                              >مهندس ديكور</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-								<div class="carousel-inner pb-5">
-									
-									<div class="carousel-item active">
-										<div class="row justify-content-center">
-											<div class="col-lg-8 mx-auto">
-												<div class="testimonial-block text-center">
-													<blockquote class="mb-5">
-														<p>&ldquo;تجربتي مع هذا المتجر كانت استثنائية. جودة الأثاث ممتازة والتصميمات عصرية جداً، بالإضافة إلى أن خدمة العملاء كانت سريعة ومتعاونة.&rdquo;</p>
-													</blockquote>
-													<div class="author-info">
-														<div class="author-pic">
-															<img src="images/person-1.png" alt="أحمد محمد" class="img-fluid">
-														</div>
-														<h3 class="font-weight-bold">أحمد محمد</h3>
-														<span class="position d-block mb-3">مهندس ديكور</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> 
+                  <div class="carousel-item">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8 mx-auto">
+                        <div class="testimonial-block text-center">
+                          <blockquote class="mb-5">
+                            <p>
+                              &ldquo;أفضل مكان لشراء الأثاث المودرن! الخامات
+                              المستخدمة عالية الجودة والأسعار تنافسية مقارنة
+                              بالسوق. أنصح الجميع بالتعامل معهم.&rdquo;
+                            </p>
+                          </blockquote>
+                          <div class="author-info">
+                            <div class="author-pic">
+                              <img
+                                src="images/person-1.png"
+                                alt="سارة خالد"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h3 class="font-weight-bold">سارة خالد</h3>
+                            <span class="position d-block mb-3">ربة منزل</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-									<div class="carousel-item">
-										<div class="row justify-content-center">
-											<div class="col-lg-8 mx-auto">
-												<div class="testimonial-block text-center">
-													<blockquote class="mb-5">
-														<p>&ldquo;أفضل مكان لشراء الأثاث المودرن! الخامات المستخدمة عالية الجودة والأسعار تنافسية مقارنة بالسوق. أنصح الجميع بالتعامل معهم.&rdquo;</p>
-													</blockquote>
-													<div class="author-info">
-														<div class="author-pic">
-															<img src="images/person-1.png" alt="سارة خالد" class="img-fluid">
-														</div>
-														<h3 class="font-weight-bold">سارة خالد</h3>
-														<span class="position d-block mb-3">ربة منزل</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> 
+                  <div class="carousel-item">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-8 mx-auto">
+                        <div class="testimonial-block text-center">
+                          <blockquote class="mb-5">
+                            <p>
+                              &ldquo;التوصيل كان في الموعد المحدد، والمنتجات
+                              مطابقة تماماً للصور الموجودة على الموقع. كانت
+                              تجربة تسوق رائعة وسأكررها بالتأكيد.&rdquo;
+                            </p>
+                          </blockquote>
+                          <div class="author-info">
+                            <div class="author-pic">
+                              <img
+                                src="images/person-1.png"
+                                alt="محمود طارق"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h3 class="font-weight-bold">محمود طارق</h3>
+                            <span class="position d-block mb-3">صاحب شركة</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-									<div class="carousel-item">
-										<div class="row justify-content-center">
-											<div class="col-lg-8 mx-auto">
-												<div class="testimonial-block text-center">
-													<blockquote class="mb-5">
-														<p>&ldquo;التوصيل كان في الموعد المحدد، والمنتجات مطابقة تماماً للصور الموجودة على الموقع. كانت تجربة تسوق رائعة وسأكررها بالتأكيد.&rdquo;</p>
-													</blockquote>
-													<div class="author-info">
-														<div class="author-pic">
-															<img src="images/person-1.png" alt="محمود طارق" class="img-fluid">
-														</div>
-														<h3 class="font-weight-bold">محمود طارق</h3>
-														<span class="position d-block mb-3">صاحب شركة</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> 
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
+                  style="width: 5%"
+                >
+                  <span
+                    class="fa fa-chevron-left"
+                    aria-hidden="true"
+                    style="
+                      color: #3b5d50;
+                      font-size: 1.5rem;
+                      background: rgba(0, 0, 0, 0.05);
+                      border-radius: 50%;
+                      width: 50px;
+                      height: 50px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  ></span>
+                  <span class="visually-hidden">السابق</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                  style="width: 5%"
+                >
+                  <span
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                    style="
+                      color: #3b5d50;
+                      font-size: 1.5rem;
+                      background: rgba(0, 0, 0, 0.05);
+                      border-radius: 50%;
+                      width: 50px;
+                      height: 50px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  ></span>
+                  <span class="visually-hidden">التالي</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial Slider -->
+    -->
 
-								</div>
-								
-								<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 5%;">
-									<span class="fa fa-chevron-left" aria-hidden="true" style="color: #3b5d50; font-size: 1.5rem; background: rgba(0,0,0,0.05); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"></span>
-									<span class="visually-hidden">السابق</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 5%;">
-									<span class="fa fa-chevron-right" aria-hidden="true" style="color: #3b5d50; font-size: 1.5rem; background: rgba(0,0,0,0.05); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"></span>
-									<span class="visually-hidden">التالي</span>
-								</button>
+    <footer class="footer-section">
+      <div class="container relative">
+        <div class="sofa-img">
+          <img src="images/sofa.png" alt="صورة" class="img-fluid" />
+        </div>
 
-							</div>
+        <div class="row justify-content-end">
+          <div class="col-lg-8">
+            <div class="subscription-form">
+              <h3 class="d-flex align-items-center">
+                <span class="me-1"
+                  ><img
+                    src="images/envelope-outline.svg"
+                    alt="صورة"
+                    class="img-fluid" /></span
+                ><span>اشترك في النشرة البريدية</span>
+              </h3>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Testimonial Slider -->
+              <form action="#" class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="أدخل اسمك"
+                  />
+                </div>
+                <div class="col-auto">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="أدخل بريدك الإلكتروني"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary">
+                    <span class="fa fa-paper-plane"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
-
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="صورة" class="img-fluid">
-				</div>
-
-				<div class="row justify-content-end">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="صورة" class="img-fluid"></span><span>اشترك في النشرة البريدية</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="أدخل اسمك">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="index.html" class="footer-logo"><img src="images/logo-dark.png" alt="أساس - Asas" style="height: 55px; width: auto;"></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى. هذا النص هو مثال لنص.</p>
-
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-8">
-						<div class="row links-wrap">
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">من نحن</a></li>
-									<li><a href="#">الخدمات</a></li>
-									<li><a href="#">المدونة</a></li>
-									<li><a href="#">اتصل بنا</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">الدعم</a></li>
-									<li><a href="#">قاعدة المعرفة</a></li>
-									<li><a href="#">دردشة مباشرة</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">الوظائف</a></li>
-									<li><a href="#">فريقنا</a></li>
-									<li><a href="#">القيادة</a></li>
-									<li><a href="#">سياسة الخصوصية</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">كرسي نورديك</a></li>
-									<li><a href="#">كروزو إيرو</a></li>
-									<li><a href="#">كرسي مريح</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">حقوق النشر &copy;<script>document.write(new Date().getFullYear());</script>. جميع الحقوق محفوظة. &mdash; تم التصميم بحب بواسطة مصطفي نجدي  <!-- License information: https://untree.co/license/ -->
+        <div class="row g-5 mb-5">
+          <div class="col-lg-4">
+            <div class="mb-4 footer-logo-wrap">
+              <a href="index.html" class="footer-logo"
+                ><img
+                  src="images/logo-dark.png"
+                  alt="أساس - Asas"
+                  style="height: 55px; width: auto"
+              /></a>
+            </div>
+            <p class="mb-4">
+              Donec facilisis quam ut purus rutrum lobortis. هذا النص هو مثال
+              لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+              النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+              الأخرى. هذا النص هو مثال لنص.
             </p>
-						</div>
 
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">الشروط والأحكام</a></li>
-								<li><a href="#">سياسة الخصوصية</a></li>
-							</ul>
-						</div>
+            <ul class="list-unstyled custom-social">
+              <li>
+                <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-linkedin"></span></a>
+              </li>
+            </ul>
+          </div>
 
-					</div>
-				</div>
+          <div class="col-lg-8">
+            <div class="row links-wrap">
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">من نحن</a></li>
+                  <li><a href="#">الخدمات</a></li>
+                  <li><a href="#">المدونة</a></li>
+                  <li><a href="#">اتصل بنا</a></li>
+                </ul>
+              </div>
 
-			</div>
-		</footer>
-		<!-- End Footer Section -->	
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">الدعم</a></li>
+                  <li><a href="#">قاعدة المعرفة</a></li>
+                  <li><a href="#">دردشة مباشرة</a></li>
+                </ul>
+              </div>
 
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">الوظائف</a></li>
+                  <li><a href="#">فريقنا</a></li>
+                  <li><a href="#">القيادة</a></li>
+                  <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+              </div>
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">كرسي نورديك</a></li>
+                  <li><a href="#">كروزو إيرو</a></li>
+                  <li><a href="#">كرسي مريح</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="border-top copyright">
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <p class="mb-2 text-center text-lg-start">
+                حقوق النشر &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . جميع الحقوق محفوظة. &mdash; تم التصميم بحب بواسطة مصطفي نجدي
+                <!-- License information: https://untree.co/license/ -->
+              </p>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-end">
+              <ul class="list-unstyled d-inline-flex ms-auto">
+                <li class="me-4"><a href="#">الشروط والأحكام</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
